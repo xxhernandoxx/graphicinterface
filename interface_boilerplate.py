@@ -2,9 +2,11 @@ from tkinter import *
 
 root = Tk()
 
+root.title("Hello World")
+
 # creating the entry widget
 
-enter_data = Entry(root, width=25)
+enter_data = Entry(root, width=25, borderwidth=5)
 enter_data.grid(row=1, column=1)
 enter_data.insert(0, "Enter Your Name: ")
 
