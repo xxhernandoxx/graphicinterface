@@ -2,22 +2,24 @@ from tkinter import *
 
 root = Tk()
 
-# creating a label widget
-myLabel_1 = Label(root, text="Hello World!")
-myLabel_2 = Label(root, text="My name is Matthew Hernandez")
+# creating the entry widget
+
+enter_data = Entry(root, width=25)
+enter_data.grid(row=1, column=1)
+enter_data.insert(0, "Enter Your Name: ")
 
 
+# creating a label widget function
 def myClick():
-    myLabel = Label(root, text="Look! I clicked a button!!")
-    myLabel.grid(row=3, column=1)
+    hello = "Hello " + enter_data.get()
+    myLabel = Label(root, text=hello)
+    myLabel.grid(row=5, column=1)
 
-#creating a button on widget
-myButton = Button(root, text="Click Me!", padx=50, pady=10, command=myClick, fg="red", bg="black")
+# creating a button on widget
+myButton = Button(root, text="Click Me!", padx=50, pady=10, command=myClick)
 
 
 # displaying on the screen
-myLabel_1.grid(row=0, column=1)
-myLabel_2.grid(row=1, column=1)
 myButton.grid(row=2, column=1)
 
 
