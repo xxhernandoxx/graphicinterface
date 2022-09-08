@@ -16,6 +16,7 @@ def myClick():
     hello = "Hello " + enter_data.get()
     myLabel = Label(root, text=hello)
     myLabel.grid(row=5, column=1)
+    enter_data.delete(0, END)
 
 # creating a button on widget
 myButton = Button(root, text="Click Me!", padx=50, pady=10, command=myClick)
