@@ -7,7 +7,7 @@ root.title("Windows")
 
 
 def open():
-    global my_image
+    global new_image1
     top = Toplevel()
     top.title("Second Window")
     my_image1 = Image.open("./Pictures/Emerger.png")
